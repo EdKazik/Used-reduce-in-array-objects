@@ -61,7 +61,7 @@ users.forEach(userInfo => {
     }	  
 })
 let result = users.reduce(function (element, index) {
-        return element + +index.balance.replace('$', '').replace(',', '');
+        return element + + index.balance.replace('$', '').replace(',', '');
 }, 0)
 
 console.log(`Balance all of users $${result}`);
